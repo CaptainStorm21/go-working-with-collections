@@ -5,7 +5,7 @@ import (
 )
 func main() {
 	// arrays
-
+	fmt.Println("\n","Part 1 - Slices")
 	var arr [3]int
 	arr[0] = 1
 	arr[1] = 2
@@ -56,6 +56,46 @@ func main() {
 				sliced2,
 				sliced3 )
 	// maps
+	fmt.Println("\n", "Part 2 - Maps")
+
+	m := map [string]int{"foo": 34, "fee": 89, "fluffy":90}
+	fmt.Println(m)
+	fmt.Println(m["foo"])
+
+	sammyPet := map[string]string{
+			"name": "Sammy",
+			"animal": "shark",
+			"color": "blue",
+			"location": "ocean"}
+	fmt.Println(sammyPet)
+
+	sammyPet["animal"] =  "dolphin"
+	fmt.Println(sammyPet)
+
+	delete(sammyPet, "location")
+	fmt.Println(sammyPet)
+
+	//Mixed map
+	giraffe := map[string]interface{}{
+		"name": "Sahara",
+		"type": "giraffe",
+		"africa": true,
+		"age": 19}
+	fmt.Println(giraffe)
+
+	//adding to the map[]
+	giraffe["protected"]=true
+	fmt.Println(giraffe)
+
+	saharaGiraffe := make(map[string]interface{})
+	fmt.Println(saharaGiraffe)
+
+	saharaGiraffe["colors"] ="Abino"
+	saharaGiraffe["name"] ="Namibia"
+	saharaGiraffe["age"] = 4
+	fmt.Println(saharaGiraffe)
+	fmt.Println("Len: ", len(saharaGiraffe))
+
 
 
 
